@@ -1,14 +1,14 @@
 CREATE TABLE Customer
 (
     Customer_id VARCHAR2(20) PRIMARY KEY,
-    Customer_Name VARCHAR(20) NOT NULL,
+    Customer_Name VARCHAR2(20) NOT NULL,
     Customer_Tel NUMBER
 );
 
 CREATE TABLE Product
 (
-    Product_id VARCHAR(20) PRIMARY KEY,
-    Product_Name VARCHAR(20) NOT NULL,
+    Product_id VARCHAR2(20) PRIMARY KEY,
+    Product_Name VARCHAR2(20) NOT NULL,
     Price NUMBER CHECK (Price >= 0)
 );
 
